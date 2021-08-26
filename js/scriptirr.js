@@ -25,6 +25,10 @@ var animation = {
     }
 }
 
+/**
+ * Checks the Affirnity Value and whether it is 0
+ * @returns true or false depending on what value is selected
+ */
 function checkSliderMinIrr() {
     let ret = false;
     if (document.getElementById("affirrslider").value == 4) {
@@ -42,12 +46,18 @@ function checkSliderMinIrr() {
     return ret
 }
 
+/**
+ * Updates the grpah when Affirnity bar is moved
+ * @param {*} value 
+ */
 function updateAffinityIrr(value) {
     affirr = value;
+    /** if the value is 0 make the graph invisible */
     if (checkSliderMinIrr()) {
         Plotly.restyle("irreversible", 'visible', false)
         graphAlert("irralert", "aff")
     }
+    /** display the graph */
     else {
         graphRemoveAlert("irralert")
         Plotly.restyle("irreversible", 'visible', true)
