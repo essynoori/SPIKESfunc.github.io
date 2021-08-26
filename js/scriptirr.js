@@ -1,4 +1,8 @@
 
+/**
+ * Initialising variables.
+ * needs changing these variable names!
+ */
 var agoconcarr = [0, -9, -8, -7, -6];
 
 var affirr = document.getElementById("affirrslider").defaultValue;
@@ -6,6 +10,7 @@ var effirr = document.getElementById("effirrslider").defaultValue;
 var denirr = document.getElementById("denirrslider").defaultValue;
 var efficirr = document.getElementById("efficiirrslider").defaultValue;
 var agoaffirr =document.getElementById("antagoirr").value =  document.getElementById("agoaffirrslider").defaultValue;
+
 
 var animation = {
     transition: {
