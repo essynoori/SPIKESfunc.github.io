@@ -26,7 +26,7 @@ var animation = {
 }
 
 /**
- * Checks the Affirnity Value and whether it is 0
+ * Checks the value and whether it is 0
  * @returns true or false depending on what value is selected
  */
 function checkSliderMinIrr() {
@@ -84,6 +84,10 @@ function updateAffinityIrr(value) {
 
 }
 
+/**
+ * 
+ * @param {*} value 
+ */
 function updateEfficacyIrr(value) {
     effirr = value;
     if (checkSliderMinIrr()) {
